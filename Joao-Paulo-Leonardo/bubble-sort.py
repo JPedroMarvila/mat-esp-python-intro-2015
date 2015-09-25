@@ -18,9 +18,10 @@ for i in range(0, n - 1, 1):
             cartas[j] = temp
 #imprimir no terminal o resultado
 print("lista em ordem crescente:", cartas) 
-
-print ("cinco maiores valores:", cartas[n: n - 5: -1]) 
+#imprime os cinco maiores valores
+print ("cinco maiores valores:", cartas[n: n - 5: -1])
+#imprime os cinco menores valores
+#print (cartas[20: 15: -1] 
 print ("cinco menores valores:", cartas[0: 5: 1])
 
-#print (cartas[20: 15: -1] 
 
