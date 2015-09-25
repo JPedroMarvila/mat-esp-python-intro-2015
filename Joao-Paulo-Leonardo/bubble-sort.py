@@ -21,7 +21,19 @@ for i in range(0, n - 1, 1):
 #percorre com o j
     for j in range(i + 1, n, 1): 
 #teste das cartas sob a condicao de maior ou menor
+        plt.figure()
+        plt.plot(range(n), cartas, 'ok')
+        plt.plot(i, cartas[i], 'or')
+        plt.plot(j, cartas[j], 'ob')
+        plt.title("grafico colorido")
+        plt.xlabel("numero de cartas")
+        plt.ylabel("valores das cartas")
+        a = a + 1
+        plt.savefig("fig/color/bubble-it-{}.png".format(a))
+        plt.close()
+
         if cartas[i] > cartas[j]:
+
 #variavel temporaria "temp" para guardar o valor da carta i
             temp = cartas[i]
 #troca de valor entre as cartas i e j
