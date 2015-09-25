@@ -5,6 +5,7 @@ cartas = [11, 18, 3, 1, 16, 12, 6, 19, 5, 0, 14, 4, 17, 9, 13, 7, 10, 15, 2, 8]
 #imprimir a lista cartas
 print("lista original:", cartas)
 #numero de cartas
+a = 0
 n = 20
 
 #plotamos um grafico com as infos originais
@@ -27,6 +28,15 @@ for i in range(0, n - 1, 1):
             cartas[i] = cartas[j]
 #incorporacao do valor da variavel temp para a carta j
             cartas[j] = temp
+            plt.figure()
+            plt.plot(range(n), cartas, 'ok')
+            plt.title("grafico lista ordenada")
+            plt.xlabel("numero de cartas")
+            plt.ylabel("valores das cartas")
+            a = a + 1
+            plt.savefig("fig/bubble-troca-{}.png".format(a))
+            plt.close()
+
 #imprimir no terminal o resultado
 print("lista em ordem crescente:", cartas) 
 #imprime os cinco maiores valores
