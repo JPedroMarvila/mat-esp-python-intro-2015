@@ -1,7 +1,7 @@
 #cartas embaralhadas
 cartas = [11, 18, 3, 1, 16, 12, 6, 19, 5, 0, 14, 4, 17, 9, 13, 7, 10, 15, 2, 8]
 #imprimir a lista cartas
-print(cartas)
+print("lista original:", cartas)
 #numero de cartas
 n = 20
 #percorre com o i
@@ -17,4 +17,10 @@ for i in range(0, n - 1, 1):
 #incorporacao do valor da variavel temp para a carta j
             cartas[j] = temp
 #imprimir no terminal o resultado
-print(cartas)            
+print("lista em ordem crescente:", cartas) 
+
+print ("cinco maiores valores:", cartas[n: n - 5: -1]) 
+print ("cinco menores valores:", cartas[0: 5: 1])
+
+#print (cartas[20: 15: -1] 
+
